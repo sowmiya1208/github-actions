@@ -1,9 +1,10 @@
 name: Simple CI
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: 
+  # push:
+  #   branches:
+  #     - main
 env:
   APP_NAME: pipeline-test
   ENVIRONMENT: dev

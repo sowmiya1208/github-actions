@@ -17,5 +17,11 @@ jobs:
       - name: Display Files
         run: ls -la
 
+      - name: Print Date
+        run: date
+      
+      - name: Print Working Directory
+        run: pwd
+
       - name: Run Python File
         run: python app.py

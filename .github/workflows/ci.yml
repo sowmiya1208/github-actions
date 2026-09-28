@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - main
-
+env:
+  APP_NAME: pipeline-test
+  ENVIRONMENT: dev
+  
 jobs:
   build:
 
@@ -23,5 +26,8 @@ jobs:
       - name: Print Working Directory
         run: pwd
 
-      - name: Run Python File
-        run: python app.py
+      - name: print app name
+        run: echo $APP_NAME
+
+      - name: print env
+        run: echo $ENVIRONMENT
